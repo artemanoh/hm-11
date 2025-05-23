@@ -80,7 +80,7 @@ body {
 
 .restart:disabled {
   background-color: #ccc;
-  cursor: not-allowed;
+  cursor: none;
 }
 
 

@@ -1,3 +1,107 @@
-body{
-    background-color: rgb(88, 196, 88);
+body {
+  background: linear-gradient(to right, #f8f9fa, #e0eafc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Task 1 */
+
+.timer {
+  font-size: 72px;
+  font-weight: 700;
+  color: #2c3e50;
+  background-color: #ffffffcc;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.timer:hover {
+  transform: scale(1.05);
+}
+
+.message {
+  font-size: 24px;
+  color: #e74c3c;
+  background-color: #fff0f0;
+  padding: 10px 20px;
+  border-left: 5px solid #e74c3c;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Task 2 */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: #fdfdfd;
+}
+
+.millisecond-timer {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+
+.message {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  min-height: 24px;
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+
+.restart {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #7873f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.restart:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.animation {
+  display: none;
+  width: 120px;
+  height: 30px;
+  margin: 0 auto 30px auto;
+  border-radius: 15px;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #ff6ec4);
+  background-size: 600% 600%;
+  animation: waveMove 3s linear infinite;
+  box-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;
+}
+
+
+@keyframes waveMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
